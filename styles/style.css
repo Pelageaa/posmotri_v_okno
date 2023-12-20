@@ -77,7 +77,6 @@ ol {
 
 .search-form__fieldset {
   border: none;
-  min-width: 225px;
 }
 
 .search-form__fieldset-title {
@@ -123,11 +122,6 @@ ol {
   outline: none;
 }
 
-.search-form__checkbox-list {
-  display: flex;
-  gap: 15px;
-}
-
 .search-form__label {
   display: flex;
   width: fit-content;
@@ -147,7 +141,7 @@ ol {
   text-decoration: underline;
 }
 
-.search-form__label-text:hover {
+.search-form__label:has(.search-form__checkbox:hover) {
   text-decoration: underline;
   cursor: pointer;
 }
@@ -160,7 +154,7 @@ ol {
 .content__details {
   display: flex;
   flex-direction: column;
-  gap: 26px;
+  gap: 22px;
   height: 100%;
   width: 100%;
 }
@@ -324,7 +318,6 @@ input[type="checkbox"]:checked + span {
 .search-form__submit-button {
   width: 194px;
   height: 34px;
-
   font-weight: 700;
 }
 
